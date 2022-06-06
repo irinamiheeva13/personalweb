@@ -4,24 +4,8 @@ export const Container = styled.div`
     position: relative;
 `;
 
-export const Name = styled.span`
-    display: inline-block;
-    position: absolute;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-    color: #ffffff;
-`;
-
-export const Wrapper = styled.div`
-    margin-top: 26px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-`;
-
 export const ContentSection = styled.div`
-    margin-top: 165px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +13,7 @@ export const ContentSection = styled.div`
 
 export const ContentWrapper = styled.div.attrs((props: any) => ({
     flexDirection: props.flexDirection || 'column',
-    width: props.width || null,
+    width: props.width || '55%',
     justifyContent: props.justifyContent || null,
     gap: props.gap || null,
 }))`
@@ -42,36 +26,30 @@ export const ContentWrapper = styled.div.attrs((props: any) => ({
 `;
 
 export const Header = styled.h1`
-    width: 624px;
     margin-bottom: 32px;
     font-weight: bold;
     font-size: 48px;
     line-height: 56px;
     background-color: #9c5a92;
-    background: linear-gradient(
-        74deg,
-        rgba(96, 219, 248, 1) 0%,
-        rgba(156, 90, 146, 1) 100%
-    );
+    background: linear-gradient(74deg, rgba(96, 219, 248, 1) 0%, rgba(156, 90, 146, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 `;
 
 export const Description = styled.div`
-    width: 594px;
     height: 87px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     color: #ffffff;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
 `;
 
 export const ButtonWrapper = styled.div`
     width: 460px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 `;
 

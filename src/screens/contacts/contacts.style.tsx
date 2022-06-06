@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin-top: 160px;
-    margin-bottom: 80px;
+    margin-top: 150px;
 `;
 
 export const Wrapper = styled.div.attrs((props: any) => ({
@@ -28,7 +27,7 @@ export const ContactsWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    justify-content: center;
 `;
 
 export const Img = styled.img`
@@ -37,7 +36,7 @@ export const Img = styled.img`
 `;
 
 export const Link = styled.div`
-    width: 400px;
+    width: fit-content;
     margin: 0 auto;
     font-size: 16px;
     color: #3499c5;

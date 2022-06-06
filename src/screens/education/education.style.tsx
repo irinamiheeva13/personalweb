@@ -1,24 +1,19 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-    margin-top: 160px;
-`;
+export const Container = styled.div``;
 
 export const HeaderWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 `;
 
 export const ExtraHeader = styled.p`
+    width: 460px;
     font-weight: bold;
-    font-size: 78px;
+    font-size: 40px;
     background-color: #9c5a92;
-    background: linear-gradient(
-        74deg,
-        rgba(96, 219, 248, 1) 0%,
-        rgba(156, 90, 146, 1) 100%
-    );
+    background: linear-gradient(74deg, rgba(96, 219, 248, 1) 0%, rgba(156, 90, 146, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -26,7 +21,7 @@ export const ExtraHeader = styled.p`
 
 export const Content = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 `;
 
 export const TextWrapper = styled.div`

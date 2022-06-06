@@ -1,15 +1,10 @@
 import React from 'react';
 import Header from '../../components/header/header';
-import Button from '../../components/button/button';
 import star from '../../assets/img/star.png';
 import {
     Container,
     HeaderWrapper,
     ExtraHeader,
-    TextWrapper,
-    Descr,
-    Item,
-    Description,
     Content,
     EducationWrapper,
     EducationItem,
@@ -23,90 +18,79 @@ const EducationPage: React.FC = () => {
     return (
         <Container>
             <HeaderWrapper>
-                <Header
-                    text="Найти талантливого  работника очень сложно"
-                    width="560px"
-                />
-                <ExtraHeader>НО МОЖНО!</ExtraHeader>
+                <Header text="It's hard to find a talanted employee" width='460px' />
+                <ExtraHeader>But not impossible</ExtraHeader>
             </HeaderWrapper>
             <Content>
-                <TextWrapper>
-                    <Descr>
-                        С сентября 2020 начала самостоятельно изучать фронтенд —
-                        от основ верстки до нативного JavaScript и библиотеки
-                        React.
-                        <br />
-                        <br />
-                        До этого 3 года работала аккаунт-менеджером в рекламных
-                        агентствах R:TA и BBDO. Я полностью сопровождада проекты
-                        — от получения брифов до сдачи кейса на фестивали. Я
-                        занималась стратегическим планированием, подготовкой
-                        годовой коммуникации для брендов, формированием
-                        аналитических отчетов по кампаниям, разработкой
-                        медиапланов и бюджетов. Вела ежедневную коммуникацию как
-                        с клиентом, так и с командой, контролировала все
-                        тайминги и дедлайны по проектам.
-                        <br />
-                        <br />
-                        За время работы менеджером я отлично прокачала soft
-                        skills, научилась грамотно распределять свои ресурсы и
-                        ресурсы команды, быстро реагировать на возникающие
-                        проблемы.
-                    </Descr>
-
-                    <Item>
-                        <Description>
-                            В мир IT меня привело желание научиться создавать
-                            своими руками, возможность влиять на функционал и
-                            внешний вид продукта.
-                            <br />
-                            <br />
-                            Я увидела, как с помощью логики и алгоритмов можно
-                            решать реальные проблемы — от создания понятных и
-                            удобных интерфейсов до построения
-                            многофункциональных приложений.
-                            <br />
-                            <br />
-                            Это то, в чем я хочу развиваться.
-                        </Description>
-                    </Item>
-                </TextWrapper>
                 <EducationWrapper>
                     <EducationItem>
-                        <Img src={star} alt="star" />
+                        <Img src={star} alt='star' />
                         <ItemWrapper>
-                            <Title>МГИМО (У) МИД РОССИИ</Title>
+                            <Title>Raiffeisen Bank</Title>
                             <EduText>
-                                Магистр Международных Отношений
+                                Frontend Developer
                                 <br />
-                                Москва 2015 - 2017
+                                September 2021 - present time
                             </EduText>
                         </ItemWrapper>
                     </EducationItem>
                     <EducationItem>
-                        <Img src={star} alt="star" />
+                        <Img src={star} alt='star' />
+                        <ItemWrapper>
+                            <Title>BBDO</Title>
+                            <EduText>
+                                Junior Frontend Developer
+                                <br />
+                                July 2020 - December 2020
+                            </EduText>
+                        </ItemWrapper>
+                    </EducationItem>
+                    <EducationItem>
+                        <Img src={star} alt='star' />
+                        <ItemWrapper>
+                            <Title>BBDO</Title>
+                            <EduText>
+                                Project Manager
+                                <br />
+                                April 2019 - July 2020
+                            </EduText>
+                        </ItemWrapper>
+                    </EducationItem>
+                </EducationWrapper>
+                <EducationWrapper>
+                    <EducationItem>
+                        <Img src={star} alt='star' />
+                        <ItemWrapper>
+                            <Title>MGIMO</Title>
+                            <EduText>
+                                Master's degree, International relations and affairs
+                                <br />
+                                Moscow 2015 - 2017
+                            </EduText>
+                        </ItemWrapper>
+                    </EducationItem>
+                    <EducationItem>
+                        <Img src={star} alt='star' />
                         <ItemWrapper>
                             <Title>Linnaeus University</Title>
                             <EduText>
-                                Creativity, Entrepreneurship and Innovation in a
-                                Swedish Context
+                                Creativity, Entrepreneurship and Innovation in a Swedish Context
                                 <br />
-                                Швеция 2016
+                                Sweden 2016
                             </EduText>
                         </ItemWrapper>
                     </EducationItem>
                     <EducationItem>
-                        <Img src={star} alt="star" />
+                        <Img src={star} alt='star' />
                         <ItemWrapper>
-                            <Title>МГЛУ им. Мориса Тереза</Title>
+                            <Title>MSLU</Title>
                             <EduText>
-                                Бакалавр Политологии
+                                Bachelor's degree, Political Science
                                 <br />
-                                Москва 2011-2015
+                                Moscow 2011-2015
                             </EduText>
                         </ItemWrapper>
                     </EducationItem>
-                    <Button text="Написать в телеграм" />
                 </EducationWrapper>
             </Content>
         </Container>
