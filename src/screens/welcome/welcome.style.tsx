@@ -1,19 +1,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    position: relative;
+    margin-top: 50px;
 `;
 
 export const ContentSection = styled.div`
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
+    @media (max-width: 899px) {
+        flex-direction: column;
+        gap: 50px;
+    }
 `;
 
 export const ContentWrapper = styled.div.attrs((props: any) => ({
     flexDirection: props.flexDirection || 'column',
-    width: props.width || '55%',
+    width: props.width || 'fit-content',
     justifyContent: props.justifyContent || null,
     gap: props.gap || null,
 }))`
@@ -38,16 +42,15 @@ export const Header = styled.h1`
 `;
 
 export const Description = styled.div`
-    height: 87px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     color: #ffffff;
-    margin-bottom: 100px;
 `;
 
 export const ButtonWrapper = styled.div`
-    width: 460px;
+    width: 100%;
+    margin-top: 50px;
     display: flex;
     justify-content: flex-start;
     align-items: center;

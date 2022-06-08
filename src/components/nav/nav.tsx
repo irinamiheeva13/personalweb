@@ -1,25 +1,36 @@
 import React from 'react';
-import { Container, Item } from './nav.style';
+import { Container, Item, Overlay } from './nav.style';
 
-const Nav: React.FC = () => {
+interface INav {
+    mobFrame: boolean;
+    setMobFrame: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Nav: React.FC<INav> = ({ mobFrame, setMobFrame }) => {
+    const closeMenu = (): void => {
+        setMobFrame((mobFrame) => !mobFrame);
+    };
     return (
-        <Container>
-            <Item to='/' className={({ isActive }) => (isActive ? 'active' : '')}>
-                Обо мне
-            </Item>
-            <Item to='/about' className={({ isActive }) => (isActive ? 'active' : '')}>
-                Как я работаю
-            </Item>
-            <Item to='/projects' className={({ isActive }) => (isActive ? 'active' : '')}>
-                Проекты
-            </Item>
-            <Item to='/experience' className={({ isActive }) => (isActive ? 'active' : '')}>
-                Опыт работы
-            </Item>
-            <Item to='/contacts' className={({ isActive }) => (isActive ? 'active' : '')}>
-                Контакты
-            </Item>
-        </Container>
+        <>
+            <Overlay mobFrame={mobFrame} />
+            <Container mobFrame={mobFrame} onClick={closeMenu}>
+                <Item to='/' className={({ isActive }) => (isActive ? 'active' : '')}>
+                    About me
+                </Item>
+                <Item to='/about' className={({ isActive }) => (isActive ? 'active' : '')}>
+                    How I work
+                </Item>
+                <Item to='/projects' className={({ isActive }) => (isActive ? 'active' : '')}>
+                    Projects
+                </Item>
+                <Item to='/experience' className={({ isActive }) => (isActive ? 'active' : '')}>
+                    Experience
+                </Item>
+                <Item to='/contacts' className={({ isActive }) => (isActive ? 'active' : '')}>
+                    Contacts
+                </Item>
+            </Container>
+        </>
     );
 };
 

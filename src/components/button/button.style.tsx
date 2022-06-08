@@ -9,7 +9,7 @@ export const Btn = styled.button.attrs((props: any) => ({
 }))`
     width: ${(props) => props.width};
     height: 53px;
-    padding: 16px;
+    padding: 12px;
     background: ${(props) => props.background};
     border-radius: 8px;
     border: ${(props) => props.border};
@@ -17,4 +17,7 @@ export const Btn = styled.button.attrs((props: any) => ({
     font-size: 14px;
     color: ${(props) => props.color};
     text-decoration: ${(props) => props.textDecoration};
+    @media (max-width: 899px) {
+        width: 25%;
+    }
 `;
