@@ -15,6 +15,12 @@ import {
 } from './welcome.style';
 
 const WelcomePage: React.FC = () => {
+    const handleTelegram = (): void => {
+        window.open('https://t.me/miheeva', '_blank');
+    };
+    const handleGithub = () => {
+        window.open('https://github.com/irinamiheeva13', '_blank');
+    };
     return (
         <Container>
             <ContentSection>
@@ -40,8 +46,14 @@ const WelcomePage: React.FC = () => {
                 </ContentWrapper>
             </ContentSection>
             <ButtonWrapper>
-                <Button text='Discuss project' />
-                <Button text='Check portfolio' background='#252629' color='#60DBF8' textDecoration='underline' />
+                <Button text='Discuss project' handleLink={handleTelegram} />
+                <Button
+                    text='Check portfolio'
+                    background='#252629'
+                    color='#60DBF8'
+                    textDecoration='underline'
+                    handleLink={handleGithub}
+                />
             </ButtonWrapper>
         </Container>
     );

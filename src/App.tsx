@@ -15,6 +15,10 @@ const App: React.FC = () => {
     const handleActiveMobFrame = (): void => {
         setMobFrame((mobFrame) => !mobFrame);
     };
+    const handleTelegram = (): void => {
+        window.open('https://t.me/miheeva', '_blank');
+    };
+
     return (
         <Section>
             <GlobalStyle />
@@ -22,7 +26,7 @@ const App: React.FC = () => {
                 <Wrapper>
                     <Name>Irina Mikheeva</Name>
                     <Nav mobFrame={mobFrame} setMobFrame={setMobFrame} />
-                    <Button text='Discuss project' width='15%' />
+                    <Button text='Discuss project' width='15%' handleLink={handleTelegram} />
                     <Hamburger onClick={handleActiveMobFrame}>
                         <span />
                         <span />

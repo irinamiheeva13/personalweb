@@ -8,16 +8,10 @@ interface IButtonProps {
     textDecoration?: string;
     border?: string;
     width?: string;
+    handleLink?: () => void;
 }
 
-const Button: React.FC<IButtonProps> = ({
-    text,
-    background,
-    color,
-    textDecoration,
-    border,
-    width,
-}) => {
+const Button: React.FC<IButtonProps> = ({ text, background, color, textDecoration, border, width, handleLink }) => {
     return (
         <Btn
             background={background}
@@ -25,7 +19,7 @@ const Button: React.FC<IButtonProps> = ({
             textDecoration={textDecoration}
             border={border}
             width={width}
-        >
+            onClick={handleLink}>
             {text}
         </Btn>
     );

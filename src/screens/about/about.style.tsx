@@ -5,20 +5,43 @@ export const Container = styled.div`
 `;
 
 export const ItemWrapper = styled.div`
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 40px;
     box-shadow: 0px 7px 30px #000000;
     border-radius: 16px;
+    @media (max-width: 1500px) {
+        padding: 30px 30px;
+        gap: 12px;
+    }
+    @media (max-width: 799px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+    @media (max-width: 730px) {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 50%;
+    }
+    @media (max-width: 560px) {
+        width: inherit;
+    }
 `;
 
 export const Item = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
     width: 332px;
     height: 220px;
     background: #ffffff;
     border-radius: 16px;
+    @media (max-width: 799px) {
+        width: 100%;
+    }
 `;
 
 export const Title = styled.h5`
@@ -38,7 +61,7 @@ export const Description = styled.p`
 `;
 
 export const Content = styled.div`
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 `;
@@ -49,7 +72,6 @@ export const StepsWrapper = styled.div`
 `;
 
 export const TitleStep = styled.p`
-    margin-top: 50px;
     height: 26px;
     font-weight: bold;
     font-size: 26px;
@@ -91,6 +113,9 @@ export const Img = styled.img`
 export const PhoneWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    @media (max-width: 680px) {
+        display: none;
+    }
 `;
 
 export const Phone = styled.img`

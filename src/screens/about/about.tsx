@@ -23,27 +23,26 @@ import {
 } from './about.style';
 
 const AboutPage: React.FC = () => {
+    const handleTelegram = (): void => {
+        window.open('https://t.me/miheeva', '_blank');
+    };
+
     return (
         <Container>
-            <Header text='Удобный процесс работы и правильный результат' width='661px' />
+            <Header text='Smooth work process and immediate results ' width='90%' />
             <ItemWrapper>
                 <Item>
-                    <Title>Не использую готовые решения</Title>
-                    <Description>
-                        Пишу сложный код с алгоритмами, обрабатываю серверные запросы, применяю библиотеки и фреймворки.
-                    </Description>
+                    <Title>Do not use out-of-the-box solutions</Title>
+                    <Description>I write customazible and scalable code fitted to your business goals.</Description>
                 </Item>
                 <Item>
-                    <Title>Верстаю и разрабатываю</Title>
-                    <Description>
-                        Лендинги, SPA (single page applications), интернет-магазины,сайты-портфолио, сайты-визитки,
-                        каталоги.
-                    </Description>
+                    <Title>Develop and deploy</Title>
+                    <Description>Landing pages, SPA's, online-stores, catalogues etc.</Description>
                 </Item>
                 <Item>
-                    <Title>Движусь к цели!</Title>
+                    <Title>Always learning</Title>
                     <Description>
-                        Обучение, за которое люди платят деньги, я освоила сама и достигла такого же уровня.
+                        I keep eyes on the ball and always check for the new technologies and updates.
                     </Description>
                 </Item>
             </ItemWrapper>
@@ -54,10 +53,10 @@ const AboutPage: React.FC = () => {
                             <Img src={one} alt='1' />
                         </Wrapper>
                         <Wrapper>
-                            <TitleStep>Внимательно изучу техническое задание</TitleStep>
+                            <TitleStep>Technical requirements</TitleStep>
                             <Descr>
-                                Сначала, я подробно изучу ТЗ с поставленной задачей и макет с дизайном. Если мне что-то
-                                непонятно — я сразу задам вопросы клиенту или менеджеру.
+                                Firstly I thoroughly look through the prototypes and design (if any) and study the
+                                requirements list. In case of any question I discuss the project with the manager.
                             </Descr>
                         </Wrapper>
                     </Wrapper>
@@ -66,11 +65,10 @@ const AboutPage: React.FC = () => {
                             <Img src={two} alt='3' />
                         </Wrapper>
                         <Wrapper>
-                            <TitleStep>Декомпозирую задачу</TitleStep>
+                            <TitleStep>Decomposition</TitleStep>
                             <Descr>
-                                Разобью ее на несколько мелких подзадач и приступлю к работе. После выполнения
-                                нескольких мелких задач я обязательно сверюсь с руководителем, в том ли направлении я
-                                иду.
+                                I try to decompose the project and set reasonable deadlines for every stage avoiding
+                                micromanagement.
                             </Descr>
                         </Wrapper>
                     </Wrapper>
@@ -79,10 +77,10 @@ const AboutPage: React.FC = () => {
                             <Img src={three} alt='3' />
                         </Wrapper>
                         <Wrapper>
-                            <TitleStep>Не побоюсь спросить совета</TitleStep>
+                            <TitleStep>Ask for an advice</TitleStep>
                             <Descr>
-                                Если возник вопрос и я не могу сходу решить его, я попробую разобраться сама. Если не
-                                разобралась с проблемой за 2 часа — спрошу коллегу, чтобы не терять время зря.
+                                I try to maintain a healthy balance between being independent and not being stuck at the
+                                task I cannot complete. If I have diffculties I ask my teammates or community for help.
                             </Descr>
                         </Wrapper>
                     </Wrapper>
@@ -91,17 +89,14 @@ const AboutPage: React.FC = () => {
                             <Img src={four} alt='3' />
                         </Wrapper>
                         <Wrapper>
-                            <TitleStep>Предупждаю, если не успеваю к сроку</TitleStep>
-                            <Descr>
-                                Если понимаю, что никак не успеваю в назначенный дедлайн, то заранее свяжусь с
-                                менеджером по проекту и предупрежу о проблемах.
-                            </Descr>
+                            <TitleStep>Warn beforehand</TitleStep>
+                            <Descr>In case of any problems I warn the manager as soon as possible.</Descr>
                         </Wrapper>
                     </Wrapper>
                 </StepsWrapper>
                 <PhoneWrapper>
                     <Phone src={phone} alt='phone' />
-                    <Button text='Написать в телеграм' width='258px' />
+                    <Button text='Message me' width='100%' handleLink={handleTelegram} />
                 </PhoneWrapper>
             </Content>
         </Container>

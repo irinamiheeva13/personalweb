@@ -17,7 +17,8 @@ export const Btn = styled.button.attrs((props: any) => ({
     font-size: 14px;
     color: ${(props) => props.color};
     text-decoration: ${(props) => props.textDecoration};
+    cursor: pointer;
     @media (max-width: 899px) {
-        width: 25%;
+        width: 100%;
     }
 `;
