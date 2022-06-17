@@ -11,7 +11,7 @@ import { GlobalStyle, Section, Name, Wrapper, Hamburger } from './App.style';
 import './fonts/fonts.css';
 
 const App: React.FC = () => {
-    const [mobFrame, setMobFrame] = useState<boolean>(true);
+    const [mobFrame, setMobFrame] = useState<boolean>(false);
     const handleActiveMobFrame = (): void => {
         setMobFrame((mobFrame) => !mobFrame);
     };

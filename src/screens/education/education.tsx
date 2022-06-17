@@ -3,8 +3,6 @@ import Header from '../../components/header/header';
 import star from '../../assets/img/star.png';
 import {
     Container,
-    HeaderWrapper,
-    ExtraHeader,
     Content,
     EducationWrapper,
     EducationItem,
@@ -17,10 +15,7 @@ import {
 const EducationPage: React.FC = () => {
     return (
         <Container>
-            <HeaderWrapper>
-                <Header text="It's hard to find a talanted employee" width='460px' />
-                <ExtraHeader>But not impossible</ExtraHeader>
-            </HeaderWrapper>
+            <Header text="It's hard to find a talanted employee. But not impossible" width='100%' />
             <Content>
                 <EducationWrapper>
                     <EducationItem>
