@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 560px;
+    position: relative;
+    width: 550px;
     height: 260px;
     background: #252629;
     box-shadow: 0px 4px 50px #000000;
@@ -10,10 +11,30 @@ export const Container = styled.div`
     justify-content: space-between;
 `;
 
+export const Overlay = styled.div<{ wip: boolean }>`
+    display: none;
+    ${(props: any) => props.wip && `display: block;`}
+    ${(props: any) => props.wip && `position: absolute;`}
+    ${(props: any) => props.wip && `opacity: 0.9;`}
+    ${(props: any) => props.wip && `width: 100%;`}
+    ${(props: any) => props.wip && `height: 100%;`}
+    ${(props: any) => props.wip && `background-color: #252629;`}
+    ${(props: any) => props.wip && `z-index: 1;`}
+    ${(props: any) => props.wip && `border-radius: 16px;`}
+    span {
+        ${(props: any) => props.wip && `display: block;`}
+        ${(props: any) => props.wip && `position: absolute;`}
+        ${(props: any) => props.wip && `left: 25%;`}
+        ${(props: any) => props.wip && `top:  calc(50% - 43px);`}
+        ${(props: any) => props.wip && `color: white;`}
+        ${(props: any) => props.wip && `font-size: 2rem;`}
+    }
+`;
+
 export const DescrWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 16px 0 16px 16px;
+    margin: 12px 0 13px 12px;
     position: relative;
 `;
 
@@ -51,7 +72,7 @@ export const Link = styled.a`
 `;
 
 export const Img = styled.img`
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 100%;
     border-radius: 16px;
 `;
