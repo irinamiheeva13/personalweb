@@ -25,7 +25,7 @@ const App: React.FC = () => {
             <BrowserRouter>
                 <Wrapper>
                     <Name>Irina Mikheeva</Name>
-                    <Nav mobFrame={mobFrame} setMobFrame={setMobFrame} />
+                    <Nav mobFrame={mobFrame} />
                     <Button text='Discuss project' width='15%' handleLink={handleTelegram} />
                     <Hamburger onClick={handleActiveMobFrame}>
                         <span />

@@ -1,19 +1,11 @@
 import React from 'react';
 import { Container, Item, Overlay } from './nav.style';
 
-interface INav {
-    mobFrame: boolean;
-    setMobFrame: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const Nav: React.FC<INav> = ({ mobFrame, setMobFrame }) => {
-    const closeMenu = (): void => {
-        setMobFrame((mobFrame) => !mobFrame);
-    };
+const Nav: React.FC<{ mobFrame: boolean }> = ({ mobFrame }) => {
     return (
         <>
             <Overlay mobFrame={mobFrame} />
-            <Container mobFrame={mobFrame} onClick={closeMenu}>
+            <Container mobFrame={mobFrame}>
                 <Item to='/' className={({ isActive }) => (isActive ? 'active' : '')}>
                     About me
                 </Item>
