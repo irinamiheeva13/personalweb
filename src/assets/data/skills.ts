@@ -96,7 +96,7 @@ export const skills: ISkills[] = [
     },
     {
         id: 19,
-        skill: 'Svelte',
+        skill: 'Node JS',
         background: '#0277BD',
     },
     {

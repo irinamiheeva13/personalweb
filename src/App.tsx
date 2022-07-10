@@ -12,9 +12,11 @@ import './fonts/fonts.css';
 
 const App: React.FC = () => {
     const [mobFrame, setMobFrame] = useState<boolean>(false);
+
     const handleActiveMobFrame = (): void => {
         setMobFrame((mobFrame) => !mobFrame);
     };
+
     const handleTelegram = (): void => {
         window.open('https://t.me/miheeva', '_blank');
     };
@@ -25,7 +27,7 @@ const App: React.FC = () => {
             <BrowserRouter>
                 <Wrapper>
                     <Name>Irina Mikheeva</Name>
-                    <Nav mobFrame={mobFrame} />
+                    <Nav mobFrame={mobFrame} setMobFrame={setMobFrame} />
                     <Button text='Discuss project' width='15%' handleLink={handleTelegram} />
                     <Hamburger onClick={handleActiveMobFrame}>
                         <span />

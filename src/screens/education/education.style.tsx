@@ -18,7 +18,6 @@ export const EducationWrapper = styled.div`
 export const EducationItem = styled.div`
     display: flex;
     justify-content: flex-start;
-    height: 124px;
     border-bottom: 1px solid #9c5a92;
     margin-bottom: 48px;
 `;
@@ -32,20 +31,19 @@ export const Img = styled.img`
 export const ItemWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    margin-bottom: 12px;
 `;
 
-export const Title = styled.span`
-    width: 372px;
-    height: 36px;
+export const Title = styled.div`
     font-weight: bold;
     font-size: 28px;
     color: #ffffff;
     margin-bottom: 12px;
 `;
 
-export const EduText = styled.span`
-    width: 372px;
+export const EduText = styled.div`
     font-size: 16px;
     line-height: 21px;
     color: #e0e0e0;
+    margin-bottom: 12px;
 `;

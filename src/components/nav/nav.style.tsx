@@ -16,10 +16,11 @@ export const Container = styled.div<{ mobFrame: boolean }>`
         ${(props: any) => props.mobFrame && `flex-direction: column;`}
         ${(props: any) => props.mobFrame && `justify-content: space-evenly;`}
         ${(props: any) => props.mobFrame && `align-items: center;`}
-        ${(props: any) => props.mobFrame && `width: 30%;`}
+        ${(props: any) => props.mobFrame && `width: 50%;`}
         ${(props: any) => props.mobFrame && `height: 100vh;`}
         ${(props: any) => props.mobFrame && `transition: ease-in-out 1s;`}
-        ${(props: any) => props.mobFrame && `background-color: #252629;;`}
+        ${(props: any) => props.mobFrame && `background-color: #252629;`}
+        ${(props: any) => props.mobFrame && `z-index: 100;`}
     }
 `;
 
@@ -53,5 +54,6 @@ export const Overlay = styled.div<{ mobFrame: boolean }>`
         ${(props: any) => props.mobFrame && `width: 100%;`}
         ${(props: any) => props.mobFrame && `height: 100%;`}
         ${(props: any) => props.mobFrame && `background-color: #252629;`}
+        ${(props: any) => props.mobFrame && `z-index: -1;`}
     }
 `;

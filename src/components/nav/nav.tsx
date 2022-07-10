@@ -1,11 +1,20 @@
 import React from 'react';
 import { Container, Item, Overlay } from './nav.style';
 
-const Nav: React.FC<{ mobFrame: boolean }> = ({ mobFrame }) => {
+interface INav {
+    mobFrame: boolean, 
+    setMobFrame: React.Dispatch<React.SetStateAction<boolean>>,
+}
+
+const Nav: React.FC<INav> = ({ mobFrame, setMobFrame }) => {
+    const handleActiveMobFrame = (): void => {
+        setMobFrame((mobFrame) => !mobFrame);
+    };
+
+
     return (
-        <>
-            <Overlay mobFrame={mobFrame} />
-            <Container mobFrame={mobFrame}>
+            <Container mobFrame={mobFrame} onClick={handleActiveMobFrame}>
+            <Overlay mobFrame={mobFrame}  />
                 <Item to='/' className={({ isActive }) => (isActive ? 'active' : '')}>
                     About me
                 </Item>
@@ -22,7 +31,6 @@ const Nav: React.FC<{ mobFrame: boolean }> = ({ mobFrame }) => {
                     Contacts
                 </Item>
             </Container>
-        </>
     );
 };
 

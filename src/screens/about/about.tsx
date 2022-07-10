@@ -29,20 +29,20 @@ const AboutPage: React.FC = () => {
 
     return (
         <Container>
-            <Header text='Smooth work process and immediate results ' width='90%' />
+            <Header text='I guarantee smooth communication' width='90%' />
             <ItemWrapper>
                 <Item>
                     <Title>Do not use out-of-the-box solutions</Title>
                     <Description>I write customazible and scalable code fitted to your business goals.</Description>
                 </Item>
                 <Item>
-                    <Title>Develop and deploy</Title>
+                    <Title>Work on different tasks</Title>
                     <Description>Landing pages, SPA's, online-stores, catalogues etc.</Description>
                 </Item>
                 <Item>
                     <Title>Always learning</Title>
                     <Description>
-                        I keep eyes on the ball and always check for the new technologies and updates.
+                        I try to stay alert and always check for the new technologies and updates.
                     </Description>
                 </Item>
             </ItemWrapper>
@@ -56,7 +56,7 @@ const AboutPage: React.FC = () => {
                             <TitleStep>Technical requirements</TitleStep>
                             <Descr>
                                 Firstly I thoroughly look through the prototypes and design (if any) and study the
-                                requirements list. In case of any question I discuss the project with the manager.
+                                requirements list. In case of any question I do not hesitate to ask questions.
                             </Descr>
                         </Wrapper>
                     </Wrapper>
@@ -67,8 +67,8 @@ const AboutPage: React.FC = () => {
                         <Wrapper>
                             <TitleStep>Decomposition</TitleStep>
                             <Descr>
-                                I try to decompose the project and set reasonable deadlines for every stage avoiding
-                                micromanagement.
+                                I try to decompose the project and set reasonable deadlines for every stage while
+                                avoiding micromanagement.
                             </Descr>
                         </Wrapper>
                     </Wrapper>
@@ -77,7 +77,7 @@ const AboutPage: React.FC = () => {
                             <Img src={three} alt='3' />
                         </Wrapper>
                         <Wrapper>
-                            <TitleStep>Ask for an advice</TitleStep>
+                            <TitleStep>Community</TitleStep>
                             <Descr>
                                 I try to maintain a healthy balance between being independent and not being stuck at the
                                 task I cannot complete. If I have diffculties I ask my teammates or community for help.
@@ -89,7 +89,7 @@ const AboutPage: React.FC = () => {
                             <Img src={four} alt='3' />
                         </Wrapper>
                         <Wrapper>
-                            <TitleStep>Warn beforehand</TitleStep>
+                            <TitleStep>Advance notice</TitleStep>
                             <Descr>In case of any problems I warn the manager as soon as possible.</Descr>
                         </Wrapper>
                     </Wrapper>

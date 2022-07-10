@@ -53,7 +53,7 @@ const PortfolioPage: React.FC = () => {
     ];
     return (
         <Container>
-            <Header text='From idea to deployment' />
+            <Header text='From idea to execution' />
             <CardWrapper>
                 <Card
                     title='PERSONAL WEBSITE'

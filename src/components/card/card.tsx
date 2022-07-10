@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, DescrWrapper, Title, Descr, Stack, Link, Img, Overlay } from './card.style';
+import { Container, DescrWrapper, Title, Descr, Stack, Link, Img, Overlay, StackWrapper } from './card.style';
 
 interface IStack {
     id: number;
@@ -24,7 +24,7 @@ const Card: React.FC<ICard> = ({ title, stack, img, link, wip }) => {
             <DescrWrapper>
                 <Title>{title}</Title>
                 <Descr>Project stack:</Descr>
-                <div>
+                <StackWrapper>
                     {stack.map(({ id, stack, color }) => {
                         return (
                             <Stack key={id} color={color}>
@@ -32,7 +32,7 @@ const Card: React.FC<ICard> = ({ title, stack, img, link, wip }) => {
                             </Stack>
                         );
                     })}
-                </div>
+                </StackWrapper>
                 <Link href={link} target='_blank'>
                     Посмотреть проект
                 </Link>

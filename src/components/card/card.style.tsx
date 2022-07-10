@@ -9,6 +9,9 @@ export const Container = styled.div`
     border-radius: 16px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 500px) {
+        width: 330px;
+    }
 `;
 
 export const Overlay = styled.div<{ wip: boolean }>`
@@ -34,32 +37,33 @@ export const Overlay = styled.div<{ wip: boolean }>`
 export const DescrWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 12px 0 13px 12px;
-    position: relative;
+    padding: 24px;
 `;
 
-export const Title = styled.p`
-    height: 24px;
+export const Title = styled.div`
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
     color: #f2f2f2;
+    margin-bottom: 18px;
 `;
 
-export const Descr = styled.p`
+export const Descr = styled.div`
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     color: #e0e0e0;
+    margin-bottom: 18px;
 `;
 
-export const Stack = styled.span.attrs((props: any) => ({
+export const Stack = styled.div.attrs((props: any) => ({
     color: props.color || '#60DBF8',
 }))`
+    display: inline-block;
     font-weight: bold;
     font-size: 16px;
     color: ${(props) => props.color};
-    margin-right: 8px;
+    margin-right: 12px;
 `;
 
 export const Link = styled.a`
@@ -72,7 +76,14 @@ export const Link = styled.a`
 `;
 
 export const Img = styled.img`
-    width: 240px;
+    width: 50%;
     height: 100%;
     border-radius: 16px;
+    @media (max-width: 500px) {
+        display: none;
+    }
+`;
+
+export const StackWrapper = styled.div`
+    width: 100%;
 `;

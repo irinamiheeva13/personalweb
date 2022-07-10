@@ -27,7 +27,7 @@ const WelcomePage: React.FC = () => {
                 <ContentWrapper>
                     <Header>{`< Clean scalable code fitted to your needs >`}</Header>
                     <Description>
-                        I'm Irina, frontend developer from Moscow. I love building user-friendly interfaces and help
+                        I'm Irina, a frontend developer from Moscow. I love building user-friendly interfaces and help
                         teams to deliver great products to clients. If you have any project ideas in your mind - click
                         the big blue button and text me :)
                     </Description>

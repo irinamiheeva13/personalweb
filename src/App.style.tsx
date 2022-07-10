@@ -35,7 +35,7 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const Name = styled.span`
+export const Name = styled.div`
     width: 15%;
     display: inline-block;
     font-weight: bold;
@@ -53,7 +53,7 @@ export const Hamburger = styled.div`
         display: block;
         cursor: pointer;
         position: absolute;
-        top: 50px;
+        top: 60px;
         right: 50px;
         height: 21px;
         display: flex;
